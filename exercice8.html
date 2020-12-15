@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            fill: pink;
+            stroke: red; 
+            stroke-width: 3 ;
+        }
+    </style>
+</head>
+<body>
+    <svg width="800" height="800">
+
+        <pattern id="pattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse"> 
+            <circle cx="5" cy="5" r="5" fill="#999"></circle> 
+        </pattern>
+        <mask id="pattern-mask" x="0" y="0" width="1" height="1"> 
+            <rect x="0" y="0" width="400" height="300" fill="url(#pattern)"></rect> 
+        </mask>
+        <image xlink:href="monalisa.jpg" x="0" y="0" width="500" height="300" mask="url(#pattern-mask)"></image>
+</svg>
+</body>
+</html>

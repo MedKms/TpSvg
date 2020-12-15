@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            fill: pink;
+            stroke: red; 
+            stroke-width: 2 ;
+        }
+    </style>
+</head>
+<body>
+    <svg width="500" height="500">
+        <g>
+            <path class="a" d="M 200 100 q 100,-40 0,100" stroke-linecap="round";></path>
+            <path class="a" d="M 200 100 q -100,-40 0,100" stroke-linecap="round"></path>
+        </g>
+        <g transform="rotate(90,200,200)">
+            <path class="a" d="M 200 100 q 100,-40 0,100" stroke-linecap="round";></path>
+            <path class="a" d="M 200 100 q -100,-40 0,100" stroke-linecap="round"></path>
+        </g>
+        <g transform="rotate(180,200,200)">
+            <path class="a" d="M 200 100 q 100,-40 0,100" stroke-linecap="round";></path>
+            <path class="a" d="M 200 100 q -100,-40 0,100" stroke-linecap="round"></path>
+        </g>
+        <g transform="rotate(270,200,200)">
+            <path class="a" d="M 200 100 q 100,-40 0,100" stroke-linecap="round";></path>
+            <path class="a" d="M 200 100 q -100,-40 0,100" stroke-linecap="round"></path>
+        </g>
+    </svg>
+</body>
+</html>
